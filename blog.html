@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Berita</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/logo-only-website-ecom-bs.png" rel="icon">
+    <link href="img/logo-only-website-ecom-bs.png" rel="apple-touch-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>Jakarta, Indonesia</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>kontak@kumpulin.id</small>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="home.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0"><span class="text-secondary">Kumpulin</span>Kreasi</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="home.html" class="nav-item nav-link">Beranda</a>
+                    <a href="about.html" class="nav-item nav-link">Tentang Kami</a>
+                    <div class="nav-item dropdown" href="product.html">
+                        <a href="product.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="product.html" class="dropdown-item">Rumah Tangga</a>
+                            <a href="product.html" class="dropdown-item">Kantor</a>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="nav-item nav-link active">Berita</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn-sm-square rounded-circle ms-3" href="">
+                        <small class="fa fa-shopping-bag text-body"></small>
+                    </a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a href="{{ route('login') }}" class="btn btn-primary rounded-pill ms-3">Masuk</a>
+                    <a href="{{ route('register') }}" class="btn btn-secondary rounded-pill ms-3">Daftar</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Berita</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="home.html">Beranda</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Berita</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="display-5 mb-3">Berita Terkini</h1>
+                <p>Informasi terbaru tentang produk unik, teknologi berkelanjutan, dan berita komunitas kami yang berfokus pada lingkungan</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-3.png" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://lestari.kompas.com/read/2023/08/06/192343686/daur-ulang-limbah-elektronik-lebih-rumit-tapi-cuannya-segudang?page=all">Daur Ulang Limbah Elektronik Lebih Rumit</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Lestari Kompas.com</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>06 Agustus 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-5.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://jakarta.pikiran-rakyat.com/gaya-hidup/pr-3306960005/jangan-dibuang-manfaatkan-limbah-rumah-tangga-anda-menjadi-eco-enzyme-yang-serbaguna#google_vignette">Manfaatkan Limbah Rumah Tangga Menjadi Eco Enzyme</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Mitra Jakarta.id</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>05 Agustus 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-8.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://chanelmuslim.com/berita/kampanye-minim-plastik-muslimah-wahdah-bantaeng-kemas-daging-qurban-dengan-daun-jati">Kemas Daging Qurban dengan Daun Jati</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Chanel Muslim.com</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Juli 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="img/blog-11.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://sohib.indonesiabaik.id/article/langkah-praktis-untuk-mengurangi-jejak-karbon-H7Yqf">Langkah Praktis untuk Mengurangi Jejak Karbon Harian</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>IndonesiaBaik.id</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>14 Juni 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://jogjapolitan.harianjogja.com/read/2023/06/01/512/1137148/pengurangan-emisi-karbon-dibutuhkan-peran-serta-pemerintah-daerah">Pengurangan Emisi Dibutuhkan Peran Serta Pemerintah</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Jogjapolitan</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Juni 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-7.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://www.fastcompany.com/90876405/this-company-is-turning-chopsticks-into-furniture">This company is turning chopsticks into furniture</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Fast Company</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>05 Mei 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-9.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://www.marketeers.com/green-marketing-cintai-bumi-dengan-strategi-pemasaran-berkelanjutan/">Cintai Bumi dengan Strategi Pemasaran Berkelanjutan</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Marketeers</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Mei 2023</small>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-12.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://waste4change.com/blog/siapa-pihak-yang-berhak-menangani-sampah-medis/#:~:text=Pihak%20yang%20Berhak%20Menangani%20Sampah%20Medis%20di%20Indonesia&text=Pemerintah%20daerah%20bisa%20menyediakan%20fasilitas,atau%20jasa%20angkut%20sampah%20medis.">Siapakah Pihak yang Berhak Menangani Sampah Medis?</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Waste4change.com</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>31 Januari 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-4.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://www.kompas.com/sains/read/2023/01/18/100100623/ini-manfaat-habiskan-waktu-di-ruang-terbuka-hijau-untuk-kesehatan?page=all">Manfaat Habiskan Waktu di Ruang Terbuka Hijau</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Kompas.com</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>18 Januari 2023</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="img/blog-10.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://nasional.tempo.co/read/1484804/jangan-asal-buang-ini-cara-menangani-limbah-hewan-kurban">Jangan Asal Buang, Ini Cara Menangani Limbah Hewan Kurban</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Tempo.co</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>19 Juli 2021</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://www.suara.com/lifestyle/2021/06/13/125346/tak-bakal-kotori-lingkungan-masker-ini-bisa-berubah-jadi-bunga-saat-ditanam">Masker Ini Bisa Berubah Jadi Bunga saat Ditanam</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Suara.com</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>13 Juni 2021</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img/blog-6.jpg" alt="">
+                    <div class="bg-light p-4">
+                        <a class="d-block h5 lh-base mb-4" href="https://www.voaindonesia.com/a/sampah-masih-jadi-predator-biota-laut/5454013.html">Sampah Masih Jadi 'Predator' Biota Laut</a>
+                        <div class="text-muted border-top pt-4">
+                            <small class="me-3"><i class="fa fa-user text-primary me-2"></i>VOA Indonesia</small>
+                            <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>08 Juni 2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4"><span class="text-secondary">Kumpulin</span>Kreasi</h1>
+                    <p>Tempat di mana inovasi bertemu dengan keberlanjutan, di mana barang-barang yang tadinya diabaikan berubah menjadi produk yang unik dan bermanfaat.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Alamat</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Jakarta, Indonesia</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>021 5589 88554</p>
+                    <p><i class="fa fa-envelope me-3"></i>kontak@kumpulin.id</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Kumpulin Kreasi</h4>
+                    <a class="btn btn-link" href="home.html">Beranda</a>
+                    <a class="btn btn-link" href="about.html">Tentang Kami</a>
+                    <a class="btn btn-link" href="product.html">Produk</a>
+                    <a class="btn btn-link" href="blog.html">Berita</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Kumpulin Kreasi</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
